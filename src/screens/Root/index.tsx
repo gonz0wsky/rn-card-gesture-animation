@@ -1,9 +1,14 @@
 import React, {FC} from 'react';
-import {Container, Text} from './styles';
+import {BACKGROUND} from './contants';
+import {Container, Frame, Card, Background} from './styles';
+
+const source = {uri: BACKGROUND};
 
 const Root: FC = () => (
   <Container>
-    <Text>Hi!</Text>
+    <Background source={source} />
+    <Frame />
+    <Card />
   </Container>
 );
 

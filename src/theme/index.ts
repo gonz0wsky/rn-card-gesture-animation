@@ -4,6 +4,7 @@ import {ThemeContext} from 'styled-components/native';
 
 export const colors = {
   black: '#000000',
+  mirage: '#1D293C',
   white: '#FFFFFF',
 };
 
