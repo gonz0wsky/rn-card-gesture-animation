@@ -20,7 +20,7 @@ export const Frame = styled.View`
   position: absolute;
   align-self: center;
   width: ${({theme}) => theme.device.width * 2.91}px;
-  aspect-ratio: 1.1;
+  aspect-ratio: 1.115;
   border-width: ${({theme}) => theme.device.width}px;
   border-radius: ${({theme}) => theme.device.width * 1.055}px;
   border-color: ${({theme}) => theme.colors.black};

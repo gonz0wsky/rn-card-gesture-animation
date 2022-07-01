@@ -1,14 +1,19 @@
+import Animated from 'react-native-reanimated';
 import styled from 'styled-components/native';
+import {HEIGHT, WIDTH} from './constants';
 
-export const Container = styled.View`
-  aspect-ratio: 1.41;
-  background-color: ${({theme}) => theme.colors.black};
-  border-radius: 20px;
-  align-items: flex-end;
-  flex-direction: row;
-  padding: 20px;
-  width: ${({theme}) => theme.device.width - 40}px;
-`;
+export const Container = Animated.createAnimatedComponent(
+  styled.View`
+    align-items: flex-end;
+    background-color: ${({theme}) => theme.colors.black};
+    border-radius: 20px;
+    flex-direction: row;
+    height: ${HEIGHT}px;
+    padding: 20px;
+    width: ${WIDTH}px;
+    z-index: 999;
+  `,
+);
 
 export const Circle = styled.View`
   aspect-ratio: 1;
